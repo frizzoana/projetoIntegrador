@@ -1,0 +1,39 @@
+{
+    "fingerboards": [
+    {
+      "id": 1,
+      "produto": "",
+      "foto": "",
+      "preco": 284.90,
+      "favorito": false
+    },
+    {
+      "id": 2,
+      "produto": "",
+      "foto": "",
+      "preco": 189.99,
+      "favorito": true
+    },
+    {
+      "id": 3,
+      "produto": "",
+      "foto": "",
+      "preco": 199.90,
+      "favorito": true
+    },
+    {
+      "id": 4,
+      "produto": "",
+      "foto": "",
+      "preco": 159.99,
+      "favorito": true
+    },
+    {
+      "id": 5,
+      "produto": "",
+      "foto": "",
+      "preco": 99.90,
+      "favorito": false
+    }
+  ]
+}

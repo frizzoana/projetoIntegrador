@@ -1,0 +1,67 @@
+<div class="container">
+    
+    <h2>Seus produtos favoritos</h2>
+    <section class="lista-favoritos">
+        <div class="content">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+              <div
+                 fxFlex="25%"
+                 fxFlex.xs="100%"
+                 fxFlex.sm="33%"
+                 *ngFor="let completo of fingerboardsCompletos; let i = index">
+                    <mat-card *ngIf="completo.favorito">
+                    <img mat-card-image [src]="completo.foto" [alt]="completo.produto">
+                    <mat-card-content>
+                        <h3>{{ completo.produto }}</h3>
+                        <ul>
+                            <li>{{ completo.preco | currency }}</li>
+                        </ul>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button
+                            [class]="completo.favorito === false ? 'favorite' : 'favorite-checked'"
+                            [title]="completo.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
+                            mat-button
+                            (click)="toggleFavorito(i)">
+                            <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="star"></mat-icon>
+                        </button> 
+                        <button mat-button (click)="verDetalhes(completo.id)">Mais detalhes</button>
+                    </mat-card-actions>
+                    </mat-card>
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="completos">
+        <h2>Fingerboard Completo</h2>
+        <div class="content">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+              <div
+                fxFlex="25%"
+                fxFlex.xs="100%"
+                fxFlex.sm="33%"
+                *ngFor="let completo of fingerboardsCompletos; let i = index">
+                <mat-card class="mat-elevation-z4">
+                  <img mat-card-image [src]="completo.foto" [alt]="completo.produto">
+                  <mat-card-content>
+                    <h3>{{ completo.produto }}</h3>
+                    <ul>
+                        <li>{{ completo.preco | currency }}</li>
+                    </ul>
+                </mat-card-content>
+                  <mat-card-actions>
+                    <button
+                        [class]="completo.favorito === false ? 'favorite' : 'favorite-checked'"
+                        [title]="completo.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
+                        mat-button
+                        (click)="toggleFavorito(i)">
+                        <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="star"></mat-icon>
+                    </button> 
+                    <button mat-button (click)="verDetalhes(completo.id)">Mais detalhes</button>
+                </mat-card-actions>
+                </mat-card>
+              </div>
+            </div>
+          </div>
+    </section>
+</div>

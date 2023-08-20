@@ -1,0 +1,39 @@
+@import "../app.component.scss";
+
+.container {
+    width: 1140px;
+    min-height: calc(100vh - 200px);
+    h1{
+       border-bottom: 1px solid $preto;
+    }
+    .quem-somos {
+        h1 {
+            padding-top: 50px;  
+            font-family: $fonte-secundaria;
+        }
+    }
+    .missao {
+        h1 {
+            font-family: $fonte-secundaria;
+        }
+    }
+    .visao {
+        h1 {
+            font-family: $fonte-secundaria;
+        }
+    }
+    .valores {
+        h1 {
+            font-family: $fonte-secundaria;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        min-height: calc(100vh - 226px);
+        display: block;
+        margin: auto;
+        width: 88%;
+    }
+}

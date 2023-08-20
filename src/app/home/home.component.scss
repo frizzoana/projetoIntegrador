@@ -1,0 +1,182 @@
+@import "../app.component.scss";
+
+.container {
+  .qualidades {
+    padding: 80px 0px 80px 0px;
+  }
+  width: 1140px;
+  display: block;
+  margin: auto;
+  h1 {
+    padding-top: 50px;
+    padding-left: 15px;
+    font-family: $fonte-secundaria;
+    font-size: $grande;
+    color: $cinza-escuro;
+    border-bottom: 1px solid $preto;
+  }
+  h2 {
+    padding-top: 50px;
+    padding-left: 15px;
+    font-family: $fonte-secundaria;
+    font-size: $grande;
+    color: $cinza-escuro;
+  }
+  .carousel-item {
+    padding-bottom: 100px;
+    mat-card {
+      background-color: $branco;
+      margin: 10px;
+      box-shadow: $card-shadow;
+      transition: $card-transition;
+      &:hover {
+        box-shadow: $card-shadow-hover;
+      }
+      img {
+        width: 100%;
+      }
+      mat-card-content {
+        h3 {
+          text-align: center;
+          font-family: $fonte-secundaria;
+          font-size: $grande;
+          color: $cinza-escuro;
+          padding-top: 15px;
+        }
+        ul {
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          list-style-type: none;
+          li {
+            color: $cinza-escuro;
+            font-size: $media;
+          }
+        }
+      }
+      mat-card-actions {
+        padding-bottom: 20px;
+        padding-top: 30px;
+        gap: 10px;
+        .favorite {
+          width: 20%;
+          background-color: $branco;
+          border: 1px solid $cor-secundaria;
+          mat-icon {
+            color: $cor-secundaria;
+          }
+        }
+        .favorite-checked {
+          width: 20%;
+          background-color: $cor-secundaria;
+        }
+        button {
+          display: block;
+          width: 80%;
+          height: 48px;
+          cursor: pointer;
+          border: none;
+          border-radius: 4px;
+          background-color: $cor-secundaria;
+          color: $branco;
+          font-family: $fonte-secundaria;
+          font-size: $media;
+        }
+      }
+    }
+  }
+
+  .setas {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $preto;
+    h1 {
+      padding: 0;
+      padding-left: 10px;
+      margin: 0;
+      border: none;
+    }
+    .previous {
+      button {
+        background-color: $branco;
+        border: none;
+        span {
+          filter: invert(100%);
+          color: $preto;
+        }
+      }
+    }
+    .next {
+      button {
+        background-color: $branco;
+        border: none;
+        span {
+          filter: invert(100%);
+          color: $preto;
+        }
+      }
+    }
+  }
+  .descontos {
+    display: block;
+    width: 1545px;
+    .content {
+      overflow: hidden;
+      padding-bottom: 90px;
+    }
+    mat-card {
+      width: 95%;
+      img {
+        width: 100%;
+        max-width: 100%;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        &:hover {
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    min-height: calc(100vh - 226px);
+    display: block;
+    margin: auto;
+    width: 90%;
+    h2 {
+      border-bottom: 1px solid $preto;
+    }
+    .content {
+      padding: 16px;
+    }
+    .descontos {
+      display: block;
+      width: 100%;
+      .content {
+        overflow: hidden;
+        padding-bottom: 90px;
+      }
+      mat-card {
+        width: 95%;
+        img {
+          width: 100%;
+          max-width: 100%;
+          -moz-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          &:hover {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
