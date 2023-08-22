@@ -49,8 +49,13 @@
           text-align: center;
           list-style-type: none;
           li {
+            display: flex;
             color: $cinza-escuro;
-            font-size: $media;
+            font-size: $media; 
+            justify-content: center;
+            // p{
+            // padding-left: 15px;
+            // }
           }
         }
       }

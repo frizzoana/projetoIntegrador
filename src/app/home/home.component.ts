@@ -96,9 +96,14 @@ export class HomeComponent {
   lancamentos1: Array<any> =[
     {
       id: 1,
-      produto: 'DECK AIR JORDAN 1 34MM',
-      foto: 'https://i.ibb.co/NpxfCZF/Deck-Air-Jordan1-34mm-removebg-preview.png',
-      preco: 64.90,
+      produto: 'Expand Pinheiros',
+      foto: '../../assets/imgs/apt/expandPinheiros.jpeg',
+      area: 73,
+      dormitorios: 2,
+      // icon: '../../assets/imgs/icons/iconLocal.png',
+      // complemento: "350m da Estação Faria Lima",
+      estacionamento: 2,
+      preco: 700000,
       favorito: false,
     },
     {
@@ -114,13 +119,6 @@ export class HomeComponent {
       foto: 'https://i.ibb.co/dGVJtZ8/finger-Bag-Camo-removebg-preview.png',
       preco: 29.90,
       favorito: false,
-    },
-    {
-      id: 4,
-      produto: 'FTS BAG PRETA SIMPLES',
-      foto: 'https://i.ibb.co/jHW4V9t/bag-removebg-preview.png',
-      preco: 19.90,
-      favorito: true,
     }
   ]
 
